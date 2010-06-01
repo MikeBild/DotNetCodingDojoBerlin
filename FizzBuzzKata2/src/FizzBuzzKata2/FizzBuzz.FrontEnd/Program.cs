@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using FizzBuzz.Core;
 
 namespace FizzBuzz.FrontEnd
 {
@@ -9,6 +10,8 @@ namespace FizzBuzz.FrontEnd
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(FizzBuzzer.Run().Aggregate((x, p) => x + " " + p));
+            Console.ReadLine();
         }
     }
 }
